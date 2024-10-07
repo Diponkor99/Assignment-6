@@ -14,20 +14,20 @@
     <!-- Icon link End -->
 <body>
 <!-- header section content start -->
-     <header class="w-11/12 mx-auto mb-[100px]">
+     <header class="w-11/12 mx-auto mb-[100px] ">
     <!-- navber section from content Start  -->
      <nav class=" mx-auto  my-6 md:my-14 ">
-        <div class=" flex justify-between items-center ">
+        <div class=" flex  items-center  justify-between flex">
             <div class="flex items-center ">
                 <img class="w-5 h-5 md:w-6 md:h-6 " src="images/logo.webp" alt="">
               <a class="btn btn-ghost text-xl lg:text-3xl font-black text-[#131313]">Peddy</a>
             </div>
-         <div class="gap-2 md:gap-6 text-[#131313] flex ">
+         <div class="gap-2 md:gap-6 text-[#131313] flex mr-5 ">
             <h1 class="text-base font-normal">Home</h1>
             <h1 class="text-base font-normal">Shop</h1>
             <h1 class="text-base font-normal">Contact</h1>
          </div>
-         <div class="w-10 h-10 bg-slate-200 rounded-full justify-end" >
+         <div class="w-10 h-10 bg-slate-200 rounded-full" >
            
             <i class="fa-regular fa-user text-center grid my-2.5 "></i>
          </div>
@@ -47,14 +47,13 @@
             <h1 class="font-black text-3xl md:text-7xl text-[#131313] mb-6">Your Path to Adoption <br class=" hidden md:block "> Starts Here</h1>
          </div>
          <p class="mx-auto text-base font-normal text-[#131313] mb-8">It is a long established fact that a reader will be distracted by the readable content of a page when <br  class=" hidden md:block "> looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
-         <button class="btn View More w-[150px] mx-auto text-white bg-lime-500">View More</button>
+         <button onclick="clickViewMore()" class="btn View More w-[150px] mx-auto text-white bg-lime-500">View More</button>
     </div>
     <img class="mx-auto" src="images/pet.webp" alt="">
-     </header>
-<!-- header section content start -->
+     </header><!-- header section content start -->
 
 <!-- main section content start -->
-<main class="w-11/12 mx-auto">
+<main id="mainContainer" class="w-11/12 mx-auto ">
     <section class="grid mx-auto justify-center text-center mb-12">
          <h1 class="font-black text-[#131313] text-4xl mb-6">Adopt  Your  Best Friend</h1>
          <p>It is a long established fact that a reader will be distracted by the readable content of a <br  class=" hidden md:block "> page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
@@ -63,13 +62,92 @@
 <!-- section main cat bog etc file start -->
 <section id="section-continer" class="mb-8 justify-evenly flex ">
 
-</section>
-<!-- section main cat bog etc file End -->
+</section><!-- section main cat bog etc file End -->
+
+
+<!-- section on button name start -->
+<section >
+   <div class="flex   justify-between items-center mb-8">
+      <h1 class="font-black text-md md:text-2xl">Best Deal For you</h1>
+      <button class="btn View More w-[140px] md:w-[180px]  text-white bg-lime-500 text-[#131313] text-lg md:text-2xl">Sort by Price</button>
+   </div>
+</section><!-- section on button and name End -->
+
+<!-- Loading  aitem start -->
+<div id="loading" class="hidden mx-auto text-center h-[100px] mt-[20px] mb-[80px]"><span class="loading loading-bars loading-lg w-[80px] h-full "></span></div>
+
+<!-- section on button and name Start -->
+<section id="containerpic" >
+   <div class=" flex justify-evenly">
+   <!-- card section start -->
+    <div class="">
+      <div id="card" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+   
+      </div><!-- card section start -->
+    </div>
+   
+
+<!-- like and count section start -->
+ <div class="mt-2 bg-base-100 border w-[250px] md:w-[600px] shadow-xl rounded-xl">
+   <div id="like-to-add"  class="grid grid-cols-1 md:grid-cols-2 w-full ">
+      </div><!-- like and count section End -->
+ </div>
+</div>
+   
+</section><!-- section on button and name End -->
+
+
+
+
     
 </main>
 <!-- main section content End -->
- 
 
+<!-- footer container start -->
+<footer>
+   <footer class="footer bg-black text-base-content p-5  md:p-10 text-white">
+      <nav class=" m-auto grid justify-items-center md:justify-items-start ">
+        <h6 class="flex gap-2 items-center"><img class=" w-5 h-5" src="images/logo.webp" alt=""><span class="font-bold text-2xl">Peddy</span> </h6>
+        <a class="link link-hover">Location: av. Washington 165, NY CA </a>
+        <a class="link link-hover">54003</a>
+        <a class="link link-hover">Phone: +31 85 964 47 25</a>
+        <a class="link link-hover">Email: info@yourdomain.com</a>
+        <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+
+        <div class="flex gap-2 items-center">
+         <img class="w-6 h-full" src="images/facebook-logo.png" alt="">
+         <img class="w-8 h-full" src="images/new-2023-twitter-logo-x-icon-design_1017-45418.avif" alt="">
+         <img class="w-8 h-full" src="images/free-youtube-logo-icon-2431-thumb.png" alt="">
+         <img class="w-6 h-full" src="images/pngtree-instagram-icon-png-image_6315974.png" alt="">
+
+        </div>
+      
+      </nav>
+      <nav class=" mx-auto grid justify-items-center md:justify-items-start  ">
+        <h6 class="font-bold text-xl">Useful Links</h6>
+        <a class="link link-hover ">Home</a>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Animals</a>
+        <a class="link link-hover">Foundation</a>
+        <a class="link link-hover">Contact</a>
+      </nav>
+      <nav class="mx-auto grid justify-items-center md:justify-items-start ">
+        <h6 class="font-bold text-xl">Drop a Message</h6>
+        <input type="email" placeholder="Enter your email" class="input input-bordered w-full max-w-xs bg-slate-600" />
+
+        <button class="btn btn-wide font-bold text-xl bg-lime-600 ">Subscribe</button>
+        
+        
+      </nav>
+    </footer>
+</footer>
+<!-- footer container End -->
+ 
+<script>
+   function clickViewMore() {
+       document.getElementById('mainContainer').scrollIntoView({ behavior: 'smooth' });
+   }
+</script>
    <script src="js.js"></script> 
 </body>
 </html>
