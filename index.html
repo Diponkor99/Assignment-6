@@ -12,7 +12,18 @@
     <!-- Icon link start -->
     <script src="https://kit.fontawesome.com/ff056682ef.js" crossorigin="anonymous"></script>
     <!-- Icon link End -->
-<body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+<style>
+   .color{
+      background-color: rgb(233, 248, 219);
+   }
+</style>
+
+<body class="font-family: 'Lato', sans-serif;">
 <!-- header section content start -->
      <header class="w-11/12 mx-auto mb-[100px] ">
     <!-- navber section from content Start  -->
@@ -66,19 +77,20 @@
 
 
 <!-- section on button name start -->
-<section >
-   <div class="flex   justify-between items-center mb-8">
+<section  >
+   <div id="sort-price" class="flex   justify-between items-center mb-8">
       <h1 class="font-black text-md md:text-2xl">Best Deal For you</h1>
-      <button class="btn View More w-[140px] md:w-[180px]  text-white bg-lime-500 text-[#131313] text-lg md:text-2xl">Sort by Price</button>
+
+      <button onclick="SortButton()" class="btn View More w-[140px] md:w-[180px]  text-white bg-lime-500 text-[#131313] text-lg md:text-2xl">Sort by Price</button>
    </div>
 </section><!-- section on button and name End -->
 
 <!-- Loading  aitem start -->
-<div id="loading" class="hidden mx-auto text-center h-[100px] mt-[20px] mb-[80px]"><span class="loading loading-bars loading-lg w-[80px] h-full "></span></div>
+<div id="loading" class=" hidden mx-auto text-center h-[100px] mt-[50px] mb-[100px]"><span class="loading loading-bars loading-lg w-[80px] h-full "></span></div>
 
 <!-- section on button and name Start -->
 <section id="containerpic" >
-   <div class=" flex justify-evenly">
+   <div  class=" flex justify-evenly">
    <!-- card section start -->
     <div class="">
       <div id="card" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -89,17 +101,13 @@
 
 <!-- like and count section start -->
  <div class="mt-2 bg-base-100 border w-[250px] md:w-[600px] shadow-xl rounded-xl">
-   <div id="like-to-add"  class="grid grid-cols-1 md:grid-cols-2 w-full ">
+   <div id="like-to-add"  class="grid grid-cols-1 md:grid-cols-2 w-full gap-3">
       </div><!-- like and count section End -->
  </div>
 </div>
    
 </section><!-- section on button and name End -->
 
-
-
-
-    
 </main>
 <!-- main section content End -->
 
@@ -142,11 +150,27 @@
     </footer>
 </footer>
 <!-- footer container End -->
+
+<button class="btn hidden" id="onclikmodal" onclick="myModal.showModal()">open modal</button>
+<dialog id="myModal" class="modal  sm:modal-middle">
+  <div class="modal-box">
+   <div id="modeldatelis">
+
+   </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn mr-2 md:mr-3 px-32 md:px-48 ">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
  
 <script>
    function clickViewMore() {
        document.getElementById('mainContainer').scrollIntoView({ behavior: 'smooth' });
    }
+
 </script>
    <script src="js.js"></script> 
 </body>
